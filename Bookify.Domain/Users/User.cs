@@ -7,13 +7,13 @@ public sealed class User : Entity
 {
     public User(Guid id, FirstName firstname, LastName lastname, Email email) : base(id)
     {
-        Firstname = firstname;
-        Lastname = lastname;
+        FirstName = firstname;
+        LastName = lastname;
         Email = email;
     }
 
-    public FirstName Firstname { get; private set; }
-    public LastName Lastname { get; private set; }
+    public FirstName FirstName { get; private set; }
+    public LastName LastName { get; private set; }
     public Email Email { get; private set; }
 
     public static User Create(FirstName firstname, LastName lastname, Email email)
