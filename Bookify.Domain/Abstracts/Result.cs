@@ -44,7 +44,7 @@ public class Result<T> : Result
         _value = value;
     }
     [NotNull]
-    public T value => IsSuccess
+    public T Value => IsSuccess
         ? _value!
         : throw new InvalidOperationException("The value of a failure result can't be accessed");
 
